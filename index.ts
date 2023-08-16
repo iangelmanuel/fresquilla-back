@@ -1,8 +1,8 @@
-import express, { json, urlencoded } from 'express'
+import express from 'express'
 import dotenv from 'dotenv'
-import conectDB from './src/config/db'
 import cors, { type CorsOptions } from 'cors'
 import cloudinary from 'cloudinary'
+import conectDB from './src/config/db'
 
 import ContactRouter from './src/routes/ContactRouter'
 import ClaimRouter from './src/routes/ClaimRouter'
