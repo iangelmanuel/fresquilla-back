@@ -9,7 +9,7 @@
     "dev": "nodemon index.ts"
   },
   "keywords": [],
-  "author": "",
+  "author": "Angel DM",
   "license": "ISC",
   "devDependencies": {
     "@types/bcrypt": "5.0.0",

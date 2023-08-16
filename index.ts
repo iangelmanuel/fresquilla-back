@@ -16,15 +16,8 @@ dotenv.config()
 conectDB()
 
 // CORS
-const whitelist = [process.env.FRONTEND_URL]
 const corsOptions: CorsOptions = {
-  origin: function (origin, callback) {
-    if (whitelist.includes(origin)) {
-      callback(null, true)
-    } else {
-      callback(new Error('Not allowed by CORS'))
-    }
-  }
+  origin: process.env.FRONTEND_URL
 }
 app.use(cors(corsOptions))
 
