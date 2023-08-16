@@ -7,17 +7,17 @@ const blogSchema = new mongoose.Schema({
     trim: true
   },
   ingredients: {
-    type: String,
+    type: Array,
     required: false,
     trim: true,
   },
   description: {
-    type: String,
+    type: Array,
     required: true,
     trim: true,
   },
   links: {
-    type: String,
+    type: Array,
     required: false,
     trim: true,
   },

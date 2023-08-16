@@ -1,4 +1,4 @@
-import { Request, Response } from 'express'
+import type { Request, Response } from 'express'
 import Claim from '../models/Claim'
 
 export const createClaim = async (req: Request, res: Response) => {

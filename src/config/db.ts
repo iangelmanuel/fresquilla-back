@@ -1,4 +1,4 @@
-import mongoose, { ConnectOptions, Connection } from 'mongoose'
+import mongoose, { type ConnectOptions, Connection } from 'mongoose'
 
 interface DatabaseConnection {
   connection: Connection

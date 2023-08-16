@@ -1,4 +1,4 @@
-import mongoose, { Document, Schema } from 'mongoose'
+import mongoose, { type Document } from 'mongoose'
 import bcrypt from 'bcrypt'
 
 export interface AdminInterface extends Document {

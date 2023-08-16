@@ -1,13 +1,13 @@
 import express, { json, urlencoded } from 'express'
 import dotenv from 'dotenv'
-import conectDB from './config/db'
-import cors, { CorsOptions } from 'cors'
+import conectDB from './src/config/db'
+import cors, { type CorsOptions } from 'cors'
 import cloudinary from 'cloudinary'
 
-import ContactRouter from './routes/ContactRouter'
-import ClaimRouter from './routes/ClaimRouter'
-import BlogRouter from './routes/BlogRouter'
-import AdminRouter from './routes/AdminRouter'
+import ContactRouter from './src/routes/ContactRouter'
+import ClaimRouter from './src/routes/ClaimRouter'
+import BlogRouter from './src/routes/BlogRouter'
+import AdminRouter from './src/routes/AdminRouter'
 
 // CONFIG
 const app = express()

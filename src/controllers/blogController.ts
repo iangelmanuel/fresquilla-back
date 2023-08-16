@@ -1,4 +1,4 @@
-import { Request, Response } from 'express'
+import type { Request, Response } from 'express'
 import cloudinary from 'cloudinary'
 import Blog from '../models/Blog'
 

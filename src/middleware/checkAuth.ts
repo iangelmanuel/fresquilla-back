@@ -1,6 +1,6 @@
-import { Request, Response, NextFunction } from 'express'
-import jwt, { JwtPayload } from 'jsonwebtoken'
-import Admin, { AdminInterface } from '../models/Admin'
+import type { Request, Response, NextFunction } from 'express'
+import jwt, { type JwtPayload } from 'jsonwebtoken'
+import Admin, { type AdminInterface } from '../models/Admin'
 
 interface RequestWithUser extends Request {
   user?: AdminInterface | null
