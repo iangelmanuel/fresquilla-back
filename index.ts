@@ -1,3 +1,6 @@
+declare module 'express'
+declare module 'cors'
+
 import express from 'express'
 import dotenv from 'dotenv'
 import cors, { type CorsOptions } from 'cors'
