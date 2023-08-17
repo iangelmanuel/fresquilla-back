@@ -1,7 +1,7 @@
 declare module 'express'
 declare module 'cors'
 
-import * as exp from 'express'
+import express from 'express'
 import dotenv from 'dotenv'
 import cors, { type CorsOptions } from 'cors'
 import cloudinary from 'cloudinary'
@@ -13,8 +13,8 @@ import BlogRouter from './src/routes/BlogRouter'
 import AdminRouter from './src/routes/AdminRouter'
 
 // CONFIG
-const app = exp.default()
-app.use(exp.default.json())
+const app = express()
+app.use(express())
 dotenv.config()
 conectDB()
 
