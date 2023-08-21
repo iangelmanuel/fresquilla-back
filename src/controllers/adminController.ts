@@ -1,12 +1,9 @@
 import type { Request, Response } from 'express'
 import Admin from '../models/Admin'
 import generateJWT from '../helper/generateJWT'
+import type { AdminLoginRequest, AdminProfileRequest } from '../types/types'
 
-interface RequestWithUser extends Request {
-  user?: string | null
-}
-
-const login = async (req: Request, res: Response) => {
+const login = async (req: AdminLoginRequest, res: Response) => {
   const { email, password } = req.body
   const admin = await Admin.findOne({ email })
 
@@ -25,7 +22,7 @@ const login = async (req: Request, res: Response) => {
   }
 }
 
-const adminProfile = async (req: RequestWithUser, res: Response) => {
+const adminProfile = async (req: AdminProfileRequest, res: Response) => {
   const { user } = req
   res.json(user)
 }
