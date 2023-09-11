@@ -6,6 +6,7 @@
     }
   ],
   "buildCommand": "next build",
+  "framework": "node",
   "routes": [
     {
       "dest": "/index.ts",

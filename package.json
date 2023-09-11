@@ -35,7 +35,7 @@
   "name": "backend",
   "scripts": {
     "dev": "nodemon ./src/index.ts",
-    "start": "node ./dist/index.js",
+    "start": "tsc && node ./dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "version": "1.0.0"
