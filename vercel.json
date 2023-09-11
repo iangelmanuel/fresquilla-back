@@ -5,6 +5,7 @@
       "use": "@now/node-server"
     }
   ],
+  "buildCommand": "next build",
   "routes": [
     {
       "dest": "/index.ts",
