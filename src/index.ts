@@ -29,6 +29,10 @@ cloudinary.v2.config({
   api_secret: process.env.CLOUDINARY_API_SECRET || '',
 })
 
+app.get('/', (req, res) => {
+  res.send('API is running...')
+})
+
 app.use('/api/contact', ContactRouter)
 app.use('/api/claim', ClaimRouter)
 app.use('/api/blog', BlogRouter)
@@ -36,3 +40,5 @@ app.use('/api/admin', AdminRouter)
 
 const PORT = process.env.PORT ?? 4000
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`))
+
+export default app

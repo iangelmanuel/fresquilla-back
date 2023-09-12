@@ -28,11 +28,7 @@
   ],
   "rewrites": [
     {
-      "destination": "/api/$1",
-      "source": "/api/(.*)"
-    },
-    {
-      "destination": "/",
+      "destination": "/api",
       "source": "/(.*)"
     }
   ],
